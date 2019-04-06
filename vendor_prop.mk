@@ -145,7 +145,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.vendor.radio.sib16_support=1 \
     persist.vendor.data.mode=concurrent \
     persist.vendor.data.iwlan.enable=true \
-    persist.sys.fflag.override.settings_network_and_internet_v2=true
+    persist.sys.fflag.override.settings_network_and_internet_v2=true \
+    persist.radio.aosp_usr_pref_sel=true
 
 # Time Services
 PRODUCT_PROPERTY_OVERRIDES += \
