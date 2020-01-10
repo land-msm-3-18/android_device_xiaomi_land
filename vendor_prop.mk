@@ -160,3 +160,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # Optimize
 PRODUCT_PROPERTY_OVERRIDES += \
 sys.use_fifo_ui=1
+
+# Sim Selection Fix
+persist.vendor.radio.aosp_usr_pref_sel=true
