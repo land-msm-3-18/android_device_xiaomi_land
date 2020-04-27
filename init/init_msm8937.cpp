@@ -88,7 +88,6 @@ void check_device()
    }
 }
 
-}
 
 void vendor_load_properties()
 {
