@@ -121,10 +121,27 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.vendor.qti.sys.fw.bservice_enable=true
 
+# Perf Ux IOPrefetcher
+PRODUCT_PROPERTY_OVERRIDES += \
+vendor.enable_prefetch=1 \
+vendor.iop.enable_uxe=1 \
+vendor.iop.enable_prefetch_ofr=1 \
+vendor.perf.iop_v3.enable=1 \
+persist.vendor.qti.games.gt.prof=1 \
+
 # Perf
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.vendor.extension_library=libqti-perfd-client.so \
-    ro.vendor.qti.sys.fw.bg_apps_limit=60
+ro.vendor.extension_library=libqti-perfd-client.so \
+ro.vendor.qti.am.reschedule_service=true \
+ro.vendor.qti.core_ctl_min_cpu=2 \
+ro.vendor.qti.core_ctl_max_cpu=4
+
+# art
+PRODUCT_PROPERTY_OVERRIDES += \
+dalvik.vm.boot-dex2oat-threads=8 \
+ro.sys.fw.dex2oat_thread_count=6 \
+dalvik.vm.bg-dex2oat-threads=2 \
+dalvik.vm.dex2oat-threads=6
 
 # Radio
 PRODUCT_PROPERTY_OVERRIDES += \
