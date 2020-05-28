@@ -232,4 +232,5 @@ WIFI_HIDL_FEATURE_DISABLE_AP_MAC_RANDOMIZATION := true
 # Inherit the common proprietary files
 -include vendor/xiaomi/msm8937-common/BoardConfigVendor.mk
 
-TARGET_USES_QCOM_UM_FAMILY := true
+# Qualcomm support
+BOARD_USES_QCOM_HARDWARE := true
